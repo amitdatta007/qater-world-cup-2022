@@ -108,7 +108,8 @@ main{
     color: #fff;
     background-color: #DD0000;
 }
-.upcoming-matches{
+.upcoming-matches, .blogs{
+    /* background-color: yellow; */
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -149,6 +150,54 @@ main{
     font-size: 16px;
     font-weight: 400;
     color: #4D4D4D;
+}
+/* blog css */
+.blog{
+    width: 312px;
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.blog img{
+    width: 312px;
+    height: 175px;
+}
+.blog-info{
+    width: 312px;
+    height: 187px;
+    /* background-color: green; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.transfer-btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    width: fit-content;
+}
+.blog-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.time-and-comment{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.time-and-comment ion-icon{
+    font-size: 24px;
+}
+.area-time,.area-comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 /*--------------------------
         footer css
@@ -249,7 +298,7 @@ main{
         font-size: 20px;
         padding: 14px;
     }
-    .upcoming-matches{
+    .upcoming-matches,.blogs{
         grid-template-columns: auto;
     }
     .footer{
