@@ -111,7 +111,6 @@ main{
     background-color: #DD0000;
 }
 .upcoming-matches, .blogs{
-    /* background-color: yellow; */
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -138,13 +137,14 @@ main{
 }
 .team-flag img{
     width: 93px;
+    height: 56px;
 }
 .team-flag .vs{
     font-size: 16px;
     font-weight: 700;
 }
 .team-name{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -153,7 +153,9 @@ main{
     font-weight: 400;
     color: #4D4D4D;
 }
-/* blog css */
+/*----------------------- 
+         blog css 
+-------------------------*/
 .blog{
     width: 312px;
     height: 362px;
@@ -169,7 +171,6 @@ main{
 .blog-info{
     width: 312px;
     height: 187px;
-    /* background-color: green; */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -323,6 +324,10 @@ main{
         align-items: center;
     }
 }
+
+/*---------------------------------
+ tab responsive with many version 
+-----------------------------------*/
 @media screen and (min-width: 577px) and (max-width: 690px) {
     h1{
         font-size: 30px;
