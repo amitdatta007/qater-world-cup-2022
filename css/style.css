@@ -31,6 +31,7 @@ header{
 }
 .banner{
     width: 86%;
+    max-width: 1400px;
     background-color: #161616;
     border-radius: 30px;
     display: flex;
@@ -82,6 +83,7 @@ main{
 }
 .wrapper{
     width: 86%;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: 312px auto;
     column-gap: 24px;
@@ -199,6 +201,16 @@ main{
     justify-content: center;
     gap: 8px;
 }
+.see-more-blog{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #DD0000;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none;
+}
 /*--------------------------
         footer css
 ---------------------------- */
@@ -309,5 +321,205 @@ main{
         flex-direction: column;
         gap: 15px;
         align-items: center;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 690px) {
+    h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    p{
+        font-size: 14px;
+    }
+    header{
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+    .banner{
+        padding: 0;
+        width: 94%;
+        gap: 20px;
+    }
+    .banner-info{
+        width: 45%;
+        max-height: 260px;
+        gap: 10px;
+    }
+    .banner-image{
+        width: 45%;
+        height: 100%;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+    .watch-live-btn{
+        padding: 8px 16px;
+    }
+    main{
+        width: 100vw;
+    }
+    .wrapper{
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .aside{
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .aside .aside-btn{
+        display: flex;
+        border: 1px solid #E8E8E8;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .upcoming-matches,
+    .blogs{
+        grid-template-columns: auto;
+        gap: 25px;
+    }
+    .footer{
+        gap: 50px;
+        padding: 80px 0;
+    }
+    .footer-option {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 690px) and (max-width: 1050px){
+    h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    p{
+        font-size: 14px;
+    }
+    header{
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+    .banner{
+        padding: 0;
+        width: 94%;
+        gap: 20px;
+    }
+    .banner-info{
+        width: 45%;
+        max-height: 260px;
+        gap: 10px;
+    }
+    .banner-image{
+        width: 45%;
+        height: 100%;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+    main{
+        width: 100vw;
+    }
+    .wrapper{
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .aside{
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .aside .aside-btn{
+        display: flex;
+        border: 1px solid #E8E8E8;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .upcoming-matches,
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    .hidden-blog{
+        display: none;
+    }
+    .see-more-blog{
+        display: block;
+    }
+    .footer{
+        gap: 60px;
+        padding: 80px 0;
+    }
+    .footer-option{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
+}
+@media screen and (min-width: 1050px) and (max-width: 1500px) {
+    h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    p{
+        font-size: 14px;
+    }
+    header{
+        width: 100vw;
+        margin-bottom: 40px;
+    }
+    .banner{
+        width: 90%;
+    }
+    main{
+        width: 100vw;
+    }
+    .wrapper{
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .aside{
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .aside .aside-btn{
+        display: flex;
+        border: 1px solid #E8E8E8;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .upcoming-matches,
+    .blogs{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    .footer{
+        gap: 60px;
+        padding: 80px 0;
+    }
+    .footer-option{
+        display: flex;
     }
 }
